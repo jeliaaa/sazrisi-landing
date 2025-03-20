@@ -6,6 +6,8 @@ import Services from "./components/Services"
 import { useState } from "react"
 import { FaX } from "react-icons/fa6"
 import WhatYouGet from "./components/WhatYouGet"
+import Benefits from "./components/Benefits"
+import FAQ from "./components/FAQ"
 function App() {
   const [testingAlert, setTestingAlert] = useState(false);
   return (
@@ -14,12 +16,16 @@ function App() {
         <span>ვებ-გვერდი ტესტირების რეჟიმშია.</span>
         <FaX onClick={() => setTestingAlert(false)} className="cursor-pointer" />
       </div>}
-      <div className="w-[1600px] pb-100">
+      <div className="main_wrapper pb-100">
         <Header />
         <MainHero />
         <Subheading title={'სერვისები'} description={'ჩვენ გთავაზობთ სხვადასხვა საგნის გამოცდებისთვის მოსამზადებელ კურსებს.'} />
         <Services />
         <WhatYouGet />
+        <Subheading title={'მიდგომა'} description={'რატომ უნდა აირჩიოთ ჩვენი პლატფორმა?'} />
+        <Benefits />
+        <Subheading title={'FAQ'} description={'ხშირად დასმული შეკითხვები.'} />
+        <FAQ />
       </div>
     </div>
   )
