@@ -5,6 +5,7 @@ import Subheading from "./components/ReusableComponents/Subheading"
 import Services from "./components/Services"
 import { useState } from "react"
 import { FaX } from "react-icons/fa6"
+import WhatYouGet from "./components/WhatYouGet"
 function App() {
   const [testingAlert, setTestingAlert] = useState(false);
   return (
@@ -18,6 +19,7 @@ function App() {
         <MainHero />
         <Subheading title={'სერვისები'} description={'ჩვენ გთავაზობთ სხვადასხვა საგნის გამოცდებისთვის მოსამზადებელ კურსებს.'} />
         <Services />
+        <WhatYouGet />
       </div>
     </div>
   )

@@ -18,6 +18,25 @@
 }
 
 
-*{
+* {
   font-family: "Main";
+}
+
+/* Custom styles for navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #1a202c !important;
+  /* Change arrow color */
+}
+
+/* Custom styles for pagination dots */
+.swiper-pagination-bullet {
+  background-color: #cbd5e1;
+  /* Inactive color */
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #1a202c !important;
+  /* Active dot color */
 }
