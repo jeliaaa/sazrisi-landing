@@ -20,7 +20,7 @@ const Header = () => {
             <div className={`w-full flex items-center justify-between px-15 py-5 transition-all`}>
                 <div className='flex items-end gap-x-3'>
                     <img src={logo} alt="logo" className="w-10" />
-                    <span className='text-3xl text-white'>Sazrisi</span>
+                    <span className='text-3xl text-dark-color'>Sazrisi</span>
                 </div>
                 <div className='flex items-center gap-x-5'>
                     <Button title={'დავიწყოთ'} className='hidden md:block' />
@@ -32,12 +32,12 @@ const Header = () => {
 
             {/* Sidebar */}
             <div
-                className={`fixed top-0 right-0 h-full bg-dark-color z-50 text-white w-100 transform transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
+                className={`fixed top-0 right-0 h-full bg-dark-color z-50 text-gray-100 w-100 transform transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
                     }`}
             >
                 <div className="flex items-center justify-between p-5">
                     <img src={logo} alt="logo" className="w-8" />
-                    <FaX className='text-2xl text-white cursor-pointer' onClick={toggleSidebar} />
+                    <FaX className='text-2xl text-gray-100 cursor-pointer' onClick={toggleSidebar} />
                 </div>
                 <nav className="flex flex-col space-y-4 px-5">
                     <a href="#" className="text-xl border-b border-dark-color transition-all delay-75 hover:border-b-main-color">სერვისები</a>
@@ -45,7 +45,7 @@ const Header = () => {
                     <a href="#" className="text-xl border-b border-dark-color transition-all delay-75 hover:border-b-main-color">შეფასებები</a>
                     <a href="#" className="text-xl border-b border-dark-color transition-all delay-75 hover:border-b-main-color">კონტაქტი</a>
                 </nav>
-                <Button title={'დავიწყოთ'} className='bg-white text-dark-color! m-5 hover:bg-white block md:hidden' />
+                <Button title={'დავიწყოთ'} className='bg-gray-100 text-dark-color! m-5 hover:bg-gray-100 block md:hidden' />
             </div>
         </div>
     );

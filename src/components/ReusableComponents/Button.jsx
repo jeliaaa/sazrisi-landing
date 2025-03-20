@@ -9,7 +9,7 @@ const Button = ({ title, onClick, isLink, to, className, children, ...props }) =
             <Link
                 to={to}
                 {...props} // Pass all other props to the <Link>
-                className={`bg-dark-color text-white py-[10px] px-[35px] rounded-[10px] cursor-pointer transition-all delay-75 border-2 hover:border-dark-color hover:bg-transparent hover:text-dark-color ${className}`}
+                className={`bg-dark-color text-gray-100 py-[10px] px-[35px] rounded-[10px] cursor-pointer transition-all delay-75 border-2 hover:border-dark-color hover:bg-transparent hover:text-dark-color ${className}`}
             >
                 {title}
                 {children}
@@ -20,7 +20,7 @@ const Button = ({ title, onClick, isLink, to, className, children, ...props }) =
     return (
         <button
             onClick={onClick}
-            className={`bg-dark-color text-white py-[10px] px-[35px] rounded-[10px] cursor-pointer transition-all delay-75 border-2 hover: border-dark-color hover:bg-transparent hover:text-dark-color ${className}`}
+            className={`bg-dark-color text-gray-100 py-[10px] px-[35px] rounded-[10px] cursor-pointer transition-all delay-75 border-2 hover: border-dark-color hover:bg-transparent hover:text-dark-color ${className}`}
             {...props}
         >
             {title}
