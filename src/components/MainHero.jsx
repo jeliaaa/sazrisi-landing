@@ -5,7 +5,7 @@ import { FaChevronDown } from 'react-icons/fa'
 
 const MainHero = () => {
     return (
-        <div className='w-full flex justify-center'>
+        <div className='w-[99%] flex justify-center'>
             <div className='relative w-full pt-50 md:pt-0 flex items-center md:bg-cover bg-[80%] h-[500px]' style={{ backgroundImage: `url(${mainBanner})` }}>
                 <div className='flex absolute md:ml-7 flex-col items-center md:items-start'>
                     <div className='w-[90%] md:w-[70%]'>

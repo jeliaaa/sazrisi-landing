@@ -27,9 +27,9 @@ const FAQ = () => {
                         className="flex items-center justify-between cursor-pointer transition-all duration-300"
                         onClick={() => toggleFAQ(q.id)}
                     >
-                        <div className="flex items-center gap-x-2">
+                        <div className="flex items-center max-w-[80%] gap-x-2">
                             <h1 className="text-6xl">{String(index + 1).padStart(2, "0")}</h1>
-                            <span className="text-2xl">{q.question}</span>
+                            <span className="text-2xl w-full ml-2">{q.question}</span>
                         </div>
                         <button className="w-[50px] text-3xl flex items-center bg-gray-200 justify-center cursor-pointer aspect-square rounded-full border border-dark-color">
                             {activeIndex === q.id ? <FaMinus /> : <FaPlus />}

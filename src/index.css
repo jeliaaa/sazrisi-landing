@@ -41,11 +41,19 @@
   /* Active dot color */
 }
 
-.main_wrapper{
+.main_wrapper {
   width: 100%;
+  position: relative;
 }
+
 @media screen and (min-width:1600px) {
-  .main_wrapper{
+  .main_wrapper {
+    width: 1600px;
+  }
+  .header {
+    width: 1600px;
+  }
+  footer {
     width: 1600px;
   }
 }
