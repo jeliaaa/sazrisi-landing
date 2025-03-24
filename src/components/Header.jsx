@@ -3,11 +3,12 @@ import logo from "../assets/logo.png";
 import Button from './ReusableComponents/Button';
 import { FaBars } from 'react-icons/fa';
 import { FaX } from 'react-icons/fa6';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
     // State to handle sidebar toggle
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
+    const nav = useNavigate();
     // Toggle sidebar function
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
@@ -19,12 +20,12 @@ const Header = () => {
             {/* Header Section */}
             <div className='header w-full'>
                 <div className={`w-full flex items-center justify-between px-15 py-5 transition-all`}>
-                    <div className='flex items-end gap-x-3'>
+                    <Link to={"/"} className='flex items-end gap-x-3'>
                         <img src={logo} alt="logo" className="w-10" />
                         <span className='text-3xl text-dark-color'>Sazrisi</span>
-                    </div>
+                    </Link>
                     <div className='flex items-center gap-x-5'>
-                        <Button title={'დავიწყოთ'} className='hidden md:block' />
+                        <Button onClick={() => nav("/app")} title={'დავიწყოთ'} className='hidden md:block' />
                         <button className='h-full border-2 border-dark-color p-3 rounded-md cursor-pointer' onClick={toggleSidebar}>
                             {isSidebarOpen ? <FaX className='text-2xl' /> : <FaBars className='text-2xl' />}
                         </button>
@@ -41,10 +42,10 @@ const Header = () => {
                         <FaX className='text-2xl text-gray-100 cursor-pointer' onClick={toggleSidebar} />
                     </div>
                     <nav className="flex flex-col space-y-4 px-5">
-                        <a href="#" className="text-xl border-b border-dark-color transition-all delay-75 hover:border-b-main-color">სერვისები</a>
-                        <a href="#" className="text-xl border-b border-dark-color transition-all delay-75 hover:border-b-main-color">ბენეფიტები</a>
-                        <a href="#" className="text-xl border-b border-dark-color transition-all delay-75 hover:border-b-main-color">შეფასებები</a>
-                        <a href="#" className="text-xl border-b border-dark-color transition-all delay-75 hover:border-b-main-color">კონტაქტი</a>
+                        <a href="#services" className="text-xl border-b border-dark-color transition-all delay-75 hover:border-b-main-color">სერვისები</a>
+                        <a href="#benefits" className="text-xl border-b border-dark-color transition-all delay-75 hover:border-b-main-color">ბენეფიტები</a>
+                        <a href="#faq" className="text-xl border-b border-dark-color transition-all delay-75 hover:border-b-main-color">ხშირად დასმული კითხვები</a>
+                        <a href="#feedback" className="text-xl border-b border-dark-color transition-all delay-75 hover:border-b-main-color">შეფასება</a>
                     </nav>
                     <Button title={'დავიწყოთ'} className='bg-gray-100 text-dark-color! m-5 hover:bg-gray-100 block md:hidden' />
                 </div>

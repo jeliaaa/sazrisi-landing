@@ -14,14 +14,14 @@ const Services = () => {
         { disabled : false, title: "მათემატიკა", description: "ჩვენს ონლაინ-პლატფორმაზე მათემატიკის 30-ზე მეტი, უნიკალური ტესტის ეგზემპლარია.", img: math },
         { disabled : false, title: "ინგლისური", description: "ჩვენს ონლაინ-პლატფორმაზე ინგლისური ენის 70-ზე მეტი, უნიკალური ტესტის ეგზემპლარია.", img: english },
         { disabled : false, title: "ფიზიკა", description: "ჩვენს ონლაინ-პლატფორმაზე მათემატიკის 30-ზე მეტი, უნიკალური ტესტის ეგზემპლარია.", img: physics },
-        { disabled : true, title: "ქიმია", description: "ჩვენს ონლაინ-პლატფორმაზე მათემატიკის 30-ზე მეტი, უნიკალური ტესტის ეგზემპლარია.", img: physics },
-        { disabled : true, title: "ბიოლოგია", description: "ჩვენს ონლაინ-პლატფორმაზე მათემატიკის 30-ზე მეტი, უნიკალური ტესტის ეგზემპლარია.", img: physics }
+        { disabled : true, title: "ქიმია", description: "", img: physics },
+        { disabled : true, title: "ბიოლოგია", description: "", img: physics }
 
 
 
     ]
     return (
-        <div className='flex items-center justify-center gap-x-15 gap-y-5 w-full flex-wrap p-3'>
+        <div id='services' className='flex items-center justify-center gap-x-15 gap-y-5 w-full flex-wrap p-3'>
             <Swiper
                 modules={[Navigation, Pagination]}
                 slidesPerGroup={1}  // Move 1 slide at a time

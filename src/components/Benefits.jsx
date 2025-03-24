@@ -1,9 +1,10 @@
 import React from 'react'
 import { FaChevronRight } from 'react-icons/fa'
+import { Element } from 'react-scroll'
 
 const Benefits = () => {
     return (
-        <div className='w-full px-4'>
+        <Element name='benefits' id='benefits' className='w-full px-4'>
             <div className='flex flex-col bg-dark-color h-fit xl:h-[400px] py-8 px-10 items-center justify-between rounded-4xl'>
                 <div className='w-full box-border text-gray-100 gap-y-5 flex flex-col lg:flex-row justify-center items-center'>
                     <div className='lg:w-1/3 h-full px-3'>
@@ -30,7 +31,7 @@ const Benefits = () => {
                 </div>
                 <a className='text-main-color flex gap-1 mt-5 cursor-pointer border-2 border-main-color rounded-md p-3'>გაიგე მეტი <FaChevronRight className='-rotate-45' /></a>
             </div>
-        </div>
+        </Element>
     )
 }
 

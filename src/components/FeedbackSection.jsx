@@ -5,7 +5,7 @@ import rightPart from '../assets/vectors/form_icon_right_part.png';
 
 const FeedbackSection = () => {
     return (
-        <div className='w-full px-4'>
+        <div id='feedback' className='w-full px-4'>
             <div className='w-full flex box-border 2xl:h-[300px] mt-20 px-10 lg:px-30 bg-gray-200 rounded-4xl'>
                 <div className="w-full md:w-1/2 py-15 flex flex-col gap-5 items-start">
                     <h1 className='md:border-l-8 md:pl-5 border-main-color  text-dark-color text-3xl'>დაგვეხმარეთ ჩვენი ვებსაიტის გაუმჯობესებაში</h1>

@@ -9,7 +9,7 @@ const WhatYouGet = () => {
                 <div className="w-full md:w-1/2 py-15 flex flex-col gap-5 items-start">
                     <h1 className='text-dark-color text-3xl'>რომელი ტესტისთვის გსურს მომზადება?</h1>
                     <p>ჩვენს ონლაინ-პლატფორმასთან ერთად, შენ, შენი მეგობარი თუ ნებისმიერი სხვა მსურველი შეძლებთ მაქსიმალურად ნაყოფიერად და კომფორტულად მოემზადოთ სასურველი გამოცდებისთვის. იხილეთ ჩვენთან არსებული საგამოცდო პროგრამების ჩამონათვალი, რომელიც მუდმივად იზრდება.</p>
-                    <Link className='underline hover:text-main-color' to={'/test'}>საგამოცდო პროგრამები</Link>
+                    <Link className='underline hover:text-main-color' to={'/information'}>საგამოცდო პროგრამები</Link>
                 </div>
                 <div className="hidden md:flex w-1/2 items-center justify-end">
                     <img src={exams} className='h-4/5' alt='...' />

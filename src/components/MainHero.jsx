@@ -2,6 +2,7 @@ import React from 'react'
 import Button from './ReusableComponents/Button'
 import mainBanner from '../assets/main_banner.png'
 import { FaChevronDown } from 'react-icons/fa'
+import { animateScroll } from 'react-scroll'
 
 const MainHero = () => {
     return (
@@ -12,7 +13,7 @@ const MainHero = () => {
                         <h1 className='text-2xl md:text-5xl bg-gray-100 rounded-md text-center md:text-start md:bg-transparent'>გსურს უპრობლემოდ ჩააბარო გამოცდები?</h1>
                         <h5>მოემზადე ჩვენთან ერთად, სწრაფად, კომოფორტულად და ხარისხიანად.</h5>
                     </div>
-                    <Button className='mt-15' onClick={() => { alert('a') }}>
+                    <Button className='mt-15' onClick={() => animateScroll.scrollTo(500)}>
                         <span className='w-full flex gap-x-2 items-center'>დეტალურად <FaChevronDown /></span>
                     </Button>
                 </div>

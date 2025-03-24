@@ -11,7 +11,7 @@ const MailUs = () => {
     const generateMailtoLink = () => {
         const subject = encodeURIComponent('Feedback from ' + formData.name);
         const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`);
-        return `mailto:your-email@example.com?subject=${subject}&body=${body}`;
+        if(formData.name !== "" & formData.email !== "" & formData.message !== "") return `mailto:sazrisibatumi@gmail.com?subject=${subject}&body=${body}`;
     };
 
     return (
