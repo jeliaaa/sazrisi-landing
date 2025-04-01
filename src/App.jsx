@@ -9,6 +9,8 @@ import RawInfo from "./pages/RawInfo";
 import Login from "./app/auth/Login";
 import AppLayout from "./app/AppLayout"; // Ensure correct import
 import Register from "./app/auth/Register";
+import Main from "./app/pages/Main";
+import DailyPage from "./app/pages/DailyPage";
 
 function App() {
   const [testingAlert, setTestingAlert] = useState(false);
@@ -50,6 +52,9 @@ function App() {
           <Route index element={<UnderConstruction />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
+          <Route path="main" element={<Main />}>
+            <Route index element={<DailyPage />} />
+          </Route>
         </Route>
       </Routes>
     </div>
