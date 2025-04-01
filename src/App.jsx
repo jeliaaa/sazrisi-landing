@@ -6,9 +6,9 @@ import { Route, Routes } from "react-router-dom";
 import MainPage from "./pages/MainPage";
 import UnderConstruction from "./pages/UnderConstruction";
 import RawInfo from "./pages/RawInfo";
-import Login from "./app/login&register/login";
+import Login from "./app/auth/Login";
 import AppLayout from "./app/AppLayout"; // Ensure correct import
-import Register from "./app/login&register/Register";
+import Register from "./app/auth/Register";
 
 function App() {
   const [testingAlert, setTestingAlert] = useState(false);
