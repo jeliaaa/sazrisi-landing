@@ -43,7 +43,7 @@ const Login = () => {
 
     return (
         <div className="w-full h-full flex items-center justify-center">
-            <div className="bg-white text-dark-color flex-col w-1/2 h-[500px] rounded-xl shadow-2xl p-10 flex items-center justify-center">
+            <div className="bg-white text-dark-color flex-col md:w-1/2 h-[500px] rounded-xl shadow-2xl p-10 flex items-center justify-center">
                 <div className='flex items-end gap-x-3'>
                     <img src={logo} alt="logo" className="w-10" />
                     <span className='text-3xl text-dark-color'>Sazrisi</span>
