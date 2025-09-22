@@ -24,7 +24,7 @@ const Header = () => {
                         <span className='text-3xl text-dark-color'>Sazrisi</span>
                     </Link>
                     <div className='flex items-center gap-x-5'>
-                        <Button to={'https://app.sazrisi.ge/'} title={'დავიწყოთ'} className='hidden md:block' />
+                        <Button to={'https://app.sazrisi.ge/'} isLink={true} title={'დავიწყოთ'} className='hidden md:block' />
                         <button className='h-full border-2 border-dark-color p-3 rounded-md cursor-pointer' onClick={toggleSidebar}>
                             {isSidebarOpen ? <FaX className='text-2xl' /> : <FaBars className='text-2xl' />}
                         </button>
@@ -46,7 +46,7 @@ const Header = () => {
                         <a href="#faq" className="text-xl border-b border-dark-color transition-all delay-75 hover:border-b-main-color">ხშირად დასმული კითხვები</a>
                         <a href="#feedback" className="text-xl border-b border-dark-color transition-all delay-75 hover:border-b-main-color">შეფასება</a>
                     </nav>
-                    <Button to={'https://app.sazrisi.ge/'} title={'დავიწყოთ'} className='bg-gray-100 text-dark-color! m-5 block md:hidden' />
+                    <Button to={'https://app.sazrisi.ge/'} isLink={true} title={'დავიწყოთ'} className='bg-gray-100 text-dark-color! m-5 block md:hidden' />
                 </div>
             </div>
         </div>
