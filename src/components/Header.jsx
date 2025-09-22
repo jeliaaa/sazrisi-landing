@@ -20,7 +20,7 @@ const Header = () => {
             {/* Header Section */}
             <div className='header w-full'>
                 <div className={`w-full flex items-center justify-between px-15 py-5 transition-all`}>
-                    <Link to={"/"} className='flex items-end gap-x-3'>
+                    <Link to={"https://app.sazrisi.ge/"} className='flex items-end gap-x-3'>
                         <img src={logo} alt="logo" className="w-10" />
                         <span className='text-3xl text-dark-color'>Sazrisi</span>
                     </Link>
