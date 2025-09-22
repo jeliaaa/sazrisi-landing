@@ -3,12 +3,11 @@ import logo from "../assets/logo.png";
 import Button from './ReusableComponents/Button';
 import { FaBars } from 'react-icons/fa';
 import { FaX } from 'react-icons/fa6';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     // State to handle sidebar toggle
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-    const nav = useNavigate();
     // Toggle sidebar function
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
@@ -25,7 +24,7 @@ const Header = () => {
                         <span className='text-3xl text-dark-color'>Sazrisi</span>
                     </Link>
                     <div className='flex items-center gap-x-5'>
-                        <Button onClick={() => nav("https://app.sazrisi.ge/")} title={'დავიწყოთ'} className='hidden md:block' />
+                        <Button to={'https://app.sazrisi.ge/'} title={'დავიწყოთ'} className='hidden md:block' />
                         <button className='h-full border-2 border-dark-color p-3 rounded-md cursor-pointer' onClick={toggleSidebar}>
                             {isSidebarOpen ? <FaX className='text-2xl' /> : <FaBars className='text-2xl' />}
                         </button>
