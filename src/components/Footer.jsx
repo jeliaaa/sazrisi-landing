@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from "../assets/logo.png"
-import { BsInstagram } from 'react-icons/bs'
+import { BsFacebook, BsInstagram } from 'react-icons/bs'
 
 const Footer = () => {
     return (
@@ -13,11 +13,11 @@ const Footer = () => {
                             <span className='text-3xl'>Sazrisi</span>
                         </div>
                         <div className='flex gap-x-2 justify-center sm:justify-start'>
-                            <a href="https://instagram.com" className="bg-gray-200 p-3 rounded-full group">
+                            <a href="" className="bg-gray-200 p-3 rounded-full group">
                                 <BsInstagram className='text-main-color group-hover:text-dark-color' />
                             </a>
-                            <a href="https://instagram.com" className="bg-gray-200 p-3 rounded-full group">
-                                <BsInstagram className='text-main-color group-hover:text-dark-color' />
+                            <a href="" className="bg-gray-200 p-3 rounded-full group">
+                                <BsFacebook className='text-main-color group-hover:text-dark-color' />
                             </a>
                         </div>
                     </div>
